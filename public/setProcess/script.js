@@ -1,5 +1,6 @@
 $(() => {
 
+
     $("#getProcess").click(() =>  {
 
         $.post("/setEnvironment/getDetails", {process_name : $("#process_name_details").val()} , (obj) => {
@@ -25,9 +26,22 @@ $(() => {
 
     })
 
-    // $("$editProcess").click(() => {
+    $("#editProcess").click(() => {
 
+        $("#text").html(``)
+        
+        $.post("/setEnvironment/editDetails", {
+            process_name : $("#process_name").val(),
+            key_val : $("#key_val").val()
+        } , (obj) => {
 
-    // })
+          if(obj.success)  {
+
+            alert("Process Edited")
+            document.location.reload()   
+         }
+ 
+         })
+    })
 
 })
