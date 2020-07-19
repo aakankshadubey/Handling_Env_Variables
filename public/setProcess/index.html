@@ -3,42 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
 
-    <title>Document</title>
 </head>
 <body>
-    
     <center>
-        <h1> Home Page</h1>
-        <h2> Get Process</h2>
-        <br>
-        <!-- Process Name : <input name = "process_name"> -->
-        <br>
-        <a href = "/setEnvironment"> <button>Get Process Details</button> </a>
-       
-        <br><br>
-       
-        <h2> Edit Process</h2>
-        <br>
-        <!-- Process Name : <input name = "process_name"> -->
-        <br>
-        <a href = "/setEnvironment"> <button>Edit Process Details</button> </a>
         
+      <h2> Edit Process</h2>
+        <br>
+        Process Name : <input id = "process_name">
+        <br>
+        Enter Changed Value : <input id = "key_val">
+        <br>
+        <button id = "editProcess">Add Process</button>
         <br><br>
 
+        <h2> Get Process Details</h2>
+        <br>
+        Process Name : <input id = "process_name_details">
+        <br>
+        <button id = "getProcess">Get Process Details</button>
+        <br><br>
+        <div id = "text"></div>
+        <br><br>
+        <a href = "/"><button>Back</button></a>
 
-        <h2> Add Process</h2>
-        <br>
-        <!-- Process Name : <input name = "process_name"> -->
-        <br>
-        <a  href = "/addProcess"> <button >Add Process</button></a>
-       
     </center>
 </body>
 </html>

@@ -8,5 +8,7 @@ const home_path = path.join(__dirname, "../public/homePage")
 
 route.use('/', express.static(home_path))
 route.use('/addProcess', require("./addProcess"))
+route.use('/setEnvironment', require("./getProcess"))
+
 
 exports = module.exports = route
